@@ -1,0 +1,142 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(247, 247, 242, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-inner {
+  min-height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.navbar-logo {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--accent);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.navbar-name {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navbar-links a {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--foreground);
+}
+
+.navbar-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  background: var(--foreground);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar-contact:hover {
+  background: #34382f;
+  transform: translateY(-2px);
+}
+
+.navbar-contact span {
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  .navbar-inner {
+    min-height: 76px;
+    gap: 16px;
+  }
+
+  .navbar-links {
+    gap: 18px;
+  }
+
+  .navbar-name {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar-inner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    row-gap: 16px;
+  }
+
+  .navbar-brand {
+    gap: 8px;
+  }
+
+  .navbar-name {
+    display: inline;
+    font-size: 14px;
+  }
+
+  .navbar-logo {
+    width: 36px;
+    height: 36px;
+    font-size: 17px;
+  }
+
+  .navbar-contact {
+    padding: 10px 12px;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .navbar-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .navbar-links a {
+    font-size: 12px;
+  }
+}

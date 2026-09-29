@@ -1,0 +1,75 @@
+:root {
+  --background: #f7f7f2;
+  --foreground: #171916;
+  --surface: #ffffff;
+  --muted: #74776f;
+  --accent: #c5f467;
+  --border: #e4e5de;
+
+  --font-body: Arial, Helvetica, sans-serif;
+
+  --container-width: 1200px;
+  --page-padding: 48px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--foreground);
+}
+
+.container {
+  width: min(var(--container-width), calc(100% - var(--page-padding) * 2));
+  margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --page-padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --page-padding: 18px;
+  }
+}

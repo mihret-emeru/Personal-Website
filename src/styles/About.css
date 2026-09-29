@@ -1,0 +1,270 @@
+.about-section {
+  padding: 110px 0;
+  background: #f7f7f2;
+  color: #191b18;
+}
+
+.about-heading {
+  margin-bottom: 54px;
+}
+
+.about-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  color: #74776f;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.about-eyebrow > span {
+  width: 20px;
+  height: 2px;
+  background: #8daf48;
+}
+
+.about-title {
+  font-size: clamp(40px, 5.5vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+}
+
+.about-title > span {
+  color: #7e9e43;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: start;
+  gap: 70px;
+}
+
+.about-story {
+  padding-top: 8px;
+}
+
+.about-lead {
+  max-width: 540px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+}
+
+.about-description {
+  max-width: 540px;
+  margin-top: 20px;
+  color: #6f7269;
+  font-size: 14px;
+  line-height: 1.95;
+}
+
+.about-interests {
+  margin-top: 35px;
+}
+
+.about-interests h3 {
+  margin-bottom: 17px;
+  color: #777a70;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.about-interest-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 18px;
+}
+
+.about-interest-list > span {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.about-check {
+  color: #77963e;
+  font-weight: 700;
+}
+
+.about-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 35px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #a7b18f;
+  font-size: 13px;
+  font-weight: 700;
+  transition: gap 0.2s ease;
+}
+
+.about-contact-link:hover {
+  gap: 18px;
+}
+
+.about-skills-panel {
+  padding: 28px;
+  border-radius: 12px;
+  background: #1c1f19;
+  color: #f7f7f2;
+}
+
+.about-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.about-panel-label {
+  color: #a5b28e;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.about-panel-heading h3 {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.about-panel-icon {
+  display: grid;
+  place-items: center;
+  width: 43px;
+  height: 43px;
+  flex-shrink: 0;
+  border: 1px solid #454b3d;
+  border-radius: 9px;
+  color: #c5f467;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.about-panel-description {
+  margin-top: 14px;
+  color: #a7ac9f;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.about-skills-list {
+  margin-top: 24px;
+  border-top: 1px solid #373b32;
+}
+
+.about-skill {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 52px;
+  border-bottom: 1px solid #373b32;
+}
+
+.about-skill-number {
+  color: #78816c;
+  font-family: Consolas, monospace;
+  font-size: 10px;
+}
+
+.about-skill-name {
+  flex: 1;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.about-skill-level {
+  color: #a5ad98;
+  font-size: 8px;
+  letter-spacing: 0.7px;
+  text-align: right;
+}
+
+.about-panel-footer {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 23px;
+  color: #a7ac9f;
+  font-size: 11px;
+}
+
+.about-panel-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #c5f467;
+}
+
+@media (max-width: 850px) {
+  .about-section {
+    padding: 85px 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-story {
+    max-width: 650px;
+  }
+
+  .about-skills-panel {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-heading {
+    margin-bottom: 35px;
+  }
+
+  .about-title {
+    font-size: 39px;
+    letter-spacing: -2px;
+  }
+
+  .about-lead {
+    font-size: 19px;
+  }
+
+  .about-description {
+    font-size: 13px;
+  }
+
+  .about-interest-list {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .about-skills-panel {
+    padding: 20px 16px;
+  }
+
+  .about-panel-heading h3 {
+    font-size: 17px;
+  }
+
+  .about-skill {
+    gap: 9px;
+  }
+
+  .about-skill-level {
+    font-size: 7px;
+  }
+}
