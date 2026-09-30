@@ -10,6 +10,7 @@ const projects = [
     technologies: ["Next.js", "MongoDB", "Mongoose"],
     status: "In Progress",
     visual: "real-estate",
+    url: "https://everhomerealestate.vercel.app/",
   },
   {
     number: "02",
@@ -20,6 +21,7 @@ const projects = [
     technologies: ["Next.js", "MongoDB", "Cloudinary"],
     status: "Completed",
     visual: "vintage",
+    url: "https://vintagephotoarchive.vercel.app/",
   },
   {
     number: "03",
@@ -30,6 +32,7 @@ const projects = [
     technologies: ["Next.js", "JavaScript", "REST API"],
     status: "Project",
     visual: "bakery",
+    url: "https://bakery-theta-bay.vercel.app/",
   },
 ];
 
@@ -58,7 +61,14 @@ export default function Projects() {
 
         <div className="projects-grid">
           {projects.map((project) => (
-            <article className="project-card" key={project.number}>
+            <a
+              className="project-card"
+              key={project.number}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title} project`}
+            >
               <div
                 className={`project-visual project-visual-${project.visual}`}
               >
@@ -189,7 +199,7 @@ export default function Projects() {
                   ))}
                 </div>
               </div>
-            </article>
+            </a>
           ))}
         </div>
 
