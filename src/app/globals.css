@@ -1,14 +1,14 @@
 :root {
-  --background: #f7f7f2;
-  --foreground: #171916;
-  --surface: #ffffff;
-  --muted: #74776f;
-  --accent: #c5f467;
-  --border: #e4e5de;
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #f7f7f7;
+  --muted: #737373;
+  --accent: #171717;
+  --border: #e8e8e8;
 
   --font-body: Arial, Helvetica, sans-serif;
 
-  --container-width: 1200px;
+  --container-width: 1080px;
   --page-padding: 48px;
 }
 
@@ -27,9 +27,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 15px;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 a {
@@ -39,7 +40,8 @@ a {
 
 button,
 input,
-textarea {
+textarea,
+select {
   font: inherit;
 }
 
@@ -53,8 +55,8 @@ img {
 }
 
 ::selection {
-  background: var(--accent);
-  color: var(--foreground);
+  background: #171717;
+  color: #ffffff;
 }
 
 .container {
