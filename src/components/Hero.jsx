@@ -27,8 +27,12 @@ export default function Hero() {
           </p>
 
           <div className="hero-actions">
-            <a href="#projects" className="hero-button-primary">
-              Explore my work <span aria-hidden="true">↗</span>
+            <a
+              href="#contact"
+              className="hero-button-primary"
+              aria-label="Contact me while my resume is being prepared"
+            >
+              Resume Coming Soon <span aria-hidden="true">↓</span>
             </a>
 
             <a href="#contact" className="hero-button-secondary">
